@@ -1,6 +1,17 @@
-my_favorite_num = 5
-print(my_favorite_num)
-pi = 3.14
-
-my_favorite_num  = pi
-print(pi)
+num1 = float(input("Enter first number: "))
+num2 = float(input("enter second number:"))
+operator = input("enter operator(+,-,*,/):")
+if operator == "+":
+    result = num1+ num2
+elif operator == "-":
+    result = num1 - num2
+elif operator == "*":
+    result = num1 * num2
+elif operator == "/":
+    if num2 != 0:
+        result = num1 / num2
+    else:
+        result = "Error: Division by zero is not allowed."
+else:
+    result = "Error: Invalid operator."
+print(result)
